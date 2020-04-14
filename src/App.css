@@ -1,0 +1,53 @@
+.App{
+    text-align:center;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/personal-site-5d5d3.appspot.com/o/landscape-photo-of-mountain-with-polar-lights-1434608%20(1).jpg?alt=media&token=8cd26004-7410-4069-b260-45b562c2d92e');
+    background-size: cover;
+    color:#fff;
+    height:100%;
+}
+
+.home-main{
+    position: relative;
+    top:20%;
+}
+
+.avatar{
+    height:120px;
+}
+
+body,
+html,
+#root{
+    height:100%;
+}
+
+footer{
+    position: fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+}
+
+.home-options{
+    margin-top:150px;
+    display:flex;
+    justify-content: center;
+}
+
+.home-option{
+    width:150px;
+    height:150px;
+    background-color: #1d213c;
+    border-radius: 4px;
+    line-height: 150px;
+    cursor: pointer;
+}
+
+.middle-option{
+    margin: 0 100px;
+}
+
+.home-option p {
+    margin:0;
+
+}
