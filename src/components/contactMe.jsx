@@ -1,8 +1,19 @@
 import React from 'react';
+import { PageHeader } from 'antd';
 
-const ContactMe = () => {
+const ContactMe = (props) => {
+
+    let changeView = props.changeView;
+
     return(
-        <h1>Contact Me</h1>
+        <div className="contact-main">
+               <PageHeader
+                className="site-page-header"
+                onBack={() => changeView('home')}
+                title="Contact me"
+            />
+        </div>
+     
     );  
 };
 

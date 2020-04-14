@@ -1,5 +1,5 @@
 import React from 'react';
-import { Avatar } from 'antd';
+import { GithubOutlined, UserOutlined, MailOutlined } from '@ant-design/icons';
 
 const Home = (props) => {
 
@@ -11,13 +11,16 @@ const Home = (props) => {
             <h1>Mark Kjorlien</h1>
             <p>Developer | Athlete | Person</p>
             <div className="home-options">
-                <div className="home-option" onClick={event => changeView('about')}>
+                <div className="home-option" onClick={() => changeView('about')}>
+                    <UserOutlined style={{fontSize: '4em'}}/>
                     <p>About Me</p>
                 </div>
-                <div className="home-option middle-option" onClick={event => changeView('projects')}>
+                <div className="home-option middle-option" onClick={() => changeView('projects')}>
+                    <GithubOutlined style={{fontSize: '4em'}}/>
                     <p>My Projects</p>
                 </div>
-                <div className="home-option" onClick={event => changeView('contact')}>
+                <div className="home-option" onClick={() => changeView('contact')}>
+                    <MailOutlined style={{fontSize: '4em'}}/>
                     <p>Contact Me</p>
                 </div>
             </div>
