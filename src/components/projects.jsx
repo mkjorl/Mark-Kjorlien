@@ -1,9 +1,17 @@
 import React from 'react';
+import { PageHeader } from 'antd';
 
-const Projects = () => {
+const Projects = (props) => {
+
+    let changeView = props.changeView;
+    
     return(
         <div className="project-main">
-            <h1>My Projects</h1>
+            <PageHeader
+                className="page-header"
+                onBack={() => changeView('home')}
+                title="Home"
+            />
         </div>
     );
 }
