@@ -58,6 +58,7 @@ footer img{
 }
 
 .form-container {
+    position: relative;
     padding:40px;
     width:25%;
     margin:0 auto;
@@ -86,7 +87,8 @@ a:link{
     color:rgba(255, 255, 255, 0.85);
 }
 
-.form-success-container svg{
-    
+.form-success-container{
+    position: relative;
+    top:50%;
 }
 

@@ -58,7 +58,7 @@ const ContactMe = (props) => {
                     <div className="form-success-container">
                         <h2>Thank-you!</h2>
                         <p>I hope to speak to you soon.</p>
-                        <p>While you wait, connect with me on Linked<a href="https://www.linkedin.com/in/mark-kjorlien-0526a9185/" target="_blank"><LinkedinOutlined style={{fontSize: '2em'}}/></a></p>
+                        <p>While you wait, connect with me on Linked<a href="https://www.linkedin.com/in/mark-kjorlien-0526a9185/" target="_blank"><LinkedinOutlined style={{fontSize: '1.5em'}}/></a></p>
                     </div>
                 :
                 <Form className="contact-form"
