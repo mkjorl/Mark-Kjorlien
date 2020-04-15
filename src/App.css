@@ -30,6 +30,15 @@ footer{
     bottom:0;
     width:100%;
 }
+.footer-content{
+    justify-content: center;
+    line-height: 2em;
+}
+
+footer img{
+    height:2em;
+    margin-left:5px
+}
 
 .home-options{
     margin-top:150px;
@@ -45,6 +54,39 @@ footer{
 }
 
 .home-option p {
-    margin:0;
-
+    margin:10px 0 ;
 }
+
+.form-container {
+    padding:40px;
+    width:25%;
+    margin:0 auto;
+    background: #010916
+}
+
+.message-box{
+    height:150px!important;
+}
+
+#react-icon{
+    animation: rotation infinite 10s  linear;
+}
+
+@keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}
+
+a:visited,
+a:link{
+    color:rgba(255, 255, 255, 0.85);
+}
+
+.form-success-container svg{
+    
+}
+
