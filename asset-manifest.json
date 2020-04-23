@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Mark-Kjorlien/static/css/main.15c9d302.chunk.css",
+    "main.js": "/Mark-Kjorlien/static/js/main.cbb9e5ad.chunk.js",
+    "main.js.map": "/Mark-Kjorlien/static/js/main.cbb9e5ad.chunk.js.map",
+    "runtime-main.js": "/Mark-Kjorlien/static/js/runtime-main.e0d44c4f.js",
+    "runtime-main.js.map": "/Mark-Kjorlien/static/js/runtime-main.e0d44c4f.js.map",
+    "static/css/2.6927200a.chunk.css": "/Mark-Kjorlien/static/css/2.6927200a.chunk.css",
+    "static/js/2.af48ffeb.chunk.js": "/Mark-Kjorlien/static/js/2.af48ffeb.chunk.js",
+    "static/js/2.af48ffeb.chunk.js.map": "/Mark-Kjorlien/static/js/2.af48ffeb.chunk.js.map",
+    "index.html": "/Mark-Kjorlien/index.html",
+    "precache-manifest.85659d3b0b6e1582d13daf8346e75509.js": "/Mark-Kjorlien/precache-manifest.85659d3b0b6e1582d13daf8346e75509.js",
+    "service-worker.js": "/Mark-Kjorlien/service-worker.js",
+    "static/css/2.6927200a.chunk.css.map": "/Mark-Kjorlien/static/css/2.6927200a.chunk.css.map",
+    "static/css/main.15c9d302.chunk.css.map": "/Mark-Kjorlien/static/css/main.15c9d302.chunk.css.map",
+    "static/js/2.af48ffeb.chunk.js.LICENSE.txt": "/Mark-Kjorlien/static/js/2.af48ffeb.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Mark-Kjorlien/static/media/Neoneon-3zaD6.696ade59.otf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e0d44c4f.js",
+    "static/css/2.6927200a.chunk.css",
+    "static/js/2.af48ffeb.chunk.js",
+    "static/css/main.15c9d302.chunk.css",
+    "static/js/main.cbb9e5ad.chunk.js"
+  ]
+}
