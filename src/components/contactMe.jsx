@@ -1,18 +1,29 @@
-import React, { useState, useForm} from 'react';
+import React, { useState, useEffect} from 'react';
 import { PageHeader, Form, Input, Button } from 'antd';
 import { LinkedinOutlined } from '@ant-design/icons';
+import gsap from 'gsap';
 import axios from 'axios';
+
 
 const ContactMe = (props) => {
 
     let changeView = props.changeView;
+
+    useEffect(() => {
+        gsap.fromTo(".contact-main", {autoAlpha: 0}, {autoAlpha: 1, duration: 2})
+    });
+
+    const changeDisplay = (newView) => {
+        gsap.fromTo('.contact-main', {autoAlpha:1}, {autoAlpha:0, duration:2});
+        setTimeout(function(){changeView(newView)}, 2000);
+    }
 
     const [serverState, setServerState] = useState({
         submitting: false,
         status: null
     });
 
-    const [submitted, setSubmitted ] = useState(true);
+    const [submitted, setSubmitted ] = useState(false);
 
     const handleServerResponse = (ok) => {
         setServerState({
@@ -48,7 +59,7 @@ const ContactMe = (props) => {
         <div className="contact-main">
                <PageHeader
                 className="site-page-header"
-                onBack={() => changeView('home')}
+                onBack={() => changeDisplay('home')}
                 title="Home"
             />
 

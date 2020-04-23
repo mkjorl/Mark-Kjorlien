@@ -5,11 +5,12 @@ import Footer from './components/footer';
 import ContactMe from './components/contactMe';
 import AboutMe from './components/aboutMe';
 import Projects from './components/projects';
+import Landing from './components/landing';
 
 
 const App = () => {
 
-  const [ view, setView ] = useState('home');
+  const [ view, setView ] = useState('landing');
 
   function changeView(evt){
     setView(evt);
@@ -18,6 +19,7 @@ const App = () => {
 
   return (
     <div className="App">
+      {view === 'landing' && <Landing changeView={changeView}/>}
       {view === 'home' && <Home  changeView={changeView}/>}
       {view === "contact" && <ContactMe changeView={changeView} />}
       {view === "about" && <AboutMe changeView={changeView}/>}
