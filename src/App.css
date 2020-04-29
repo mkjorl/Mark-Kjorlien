@@ -7,8 +7,10 @@
     text-align:center;
     background-image: url('https://firebasestorage.googleapis.com/v0/b/personal-site-5d5d3.appspot.com/o/landscape-photo-of-mountain-with-polar-lights-1434608%20(1).jpg?alt=media&token=8cd26004-7410-4069-b260-45b562c2d92e');
     background-size: cover;
+    background-attachment: fixed;
     color:#fff;
     height:100%;
+    overflow: scroll;
 }
 
 .home-main{
@@ -100,35 +102,10 @@ a:link{
     top:50%;
 }
 
-.landing-main{
-    font-family: 'Neoneon';
-    font-size:6em;
-    height:100%;
-    width:100%;
-    text-align: center;
-    display: table;
-}
-
-.landing-main h1{
-    margin:0;
-    padding:0;
-    vertical-align: middle;
-    display: table-cell;
-}
-
-
 @font-face{
     font-family: 'Neoneon';
     src: local('Neoneon'), url(./fonts/Neoneon-3zaD6.otf) format('openType');
 }
-
-.landing-main svg {
-    position: absolute;
-    top:50%;
-    right:50%;
-    width:100vw;
-    transform: translate(50%, -50%);
-  }
   
 .landing-main path {
     stroke-dasharray: 8000;
@@ -138,54 +115,8 @@ a:link{
     dashFinish1 1s 3s linear forwards,
     dashFinish2 1s 4s linear forwards,
     fadeOut 3s 5s;
-    transform: scale(.20);
   }
 
-
-
-#a2 {
-    transform: translate(150px) scale(.20);
-}
-
-#r3{
-    transform: translate(290px) scale(.20); 
-}
-
-#k4{
-    transform: translate(415px) scale(.20);
-}
-  
-#k5{
-    transform: translate(600px) scale(.20);
-}
-
-#j6{
-    transform: translate(715px) scale(.20);
-}
-
-#o7{
-    transform: translate(820px) scale(.20);
-}
-
-#r8{
-    transform: translate(980px) scale(.20);
-}
-
-#l9{
-    transform: translate(1105px) scale(.20); 
-}
-
-#i10{
-    transform: translate(1195px) scale(.20); 
-}
-
-#e11{
-    transform: translate(1235px) scale(.20);
-}
-
-#n12{
-    transform: translate(1330px) scale(.20);
-}
 
   @keyframes dash {
     to {
@@ -227,3 +158,44 @@ a:link{
     }
 }
   
+
+
+.project-main{
+    width:60vw;
+    margin:0 auto;
+}
+
+.landing-main{
+    width: 100vw;
+    height:100vh;
+}
+
+
+.video-wrapper{
+    position: relative;
+    padding-bottom:49.373040752351095%;
+    margin:2em;
+}
+
+.player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .built-icons img{
+      max-width:48px;
+      margin:20px;
+  }
+
+  .uw-project-para{
+    width:70%;
+    margin:0 auto;
+    font-size:1.5em;
+  }
+
+  .uw-project-title{
+      padding-top:3em;
+  }
