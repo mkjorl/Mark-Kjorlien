@@ -1,18 +1,25 @@
-import React from 'react';
-import { PageHeader } from 'antd';
+import React, { Fragment } from 'react';
+import { PageHeader, Tabs } from 'antd';
+
+import PovertySimulator from './PovertySimulator';
 
 const Projects = (props) => {
 
     let changeView = props.changeView;
+    const { TabPane } = Tabs;
     
     return(
-        <div className="project-main">
+        <Fragment>
             <PageHeader
                 className="page-header"
                 onBack={() => changeView('home')}
                 title="Home"
             />
-        </div>
+            <div className="project-main">
+                <PovertySimulator />
+            </div>
+        </Fragment>
+        
     );
 }
 
