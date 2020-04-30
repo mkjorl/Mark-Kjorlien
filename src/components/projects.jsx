@@ -9,7 +9,7 @@ const Projects = (props) => {
     const { TabPane } = Tabs;
     
     return(
-        <Fragment>
+        <div class="project-body">
             <PageHeader
                 className="page-header"
                 onBack={() => changeView('home')}
@@ -18,7 +18,7 @@ const Projects = (props) => {
             <div className="project-main">
                 <PovertySimulator />
             </div>
-        </Fragment>
+        </div>
         
     );
 }
