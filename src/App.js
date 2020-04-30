@@ -24,7 +24,7 @@ const App = () => {
       {view === "contact" && <ContactMe changeView={changeView} />}
       {view === "about" && <AboutMe changeView={changeView}/>}
       {view === "projects" && <Projects changeView={changeView}/>}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
