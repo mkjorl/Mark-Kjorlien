@@ -6,27 +6,39 @@ import ContactMe from './components/contactMe';
 import AboutMe from './components/aboutMe';
 import Projects from './components/projects';
 import Landing from './components/landing';
-
+import{
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from 'react-router-dom';
 
 const App = () => {
 
-  const [ view, setView ] = useState('landing');
-
-  function changeView(evt){
-    setView(evt);
-  };
-
-
   return (
-    <div className="App">
-      {view === 'landing' && <Landing changeView={changeView}/>}
-      {view === 'home' && <Home  changeView={changeView}/>}
-      {view === "contact" && <ContactMe changeView={changeView} />}
-      {view === "about" && <AboutMe changeView={changeView}/>}
-      {view === "projects" && <Projects changeView={changeView}/>}
-      {/* <Footer /> */}
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route exact path="/Mark-Kjorlien">
+            <Landing />
+          </Route>
+          <Route exact path="/Mark-Kjorlien/Home">
+            <Home />
+          </Route>
+          <Route exact path="/Mark-Kjorlien/About">
+            <AboutMe />
+          </Route>
+          <Route exact path="/Mark-Kjorlien/Projects">
+            <Projects />
+          </Route>
+          <Route exact path="/Mark-Kjorlien/Contact">
+            <ContactMe />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+    
   );
+
 }
 
 export default App;

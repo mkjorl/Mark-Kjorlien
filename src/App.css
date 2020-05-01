@@ -257,6 +257,28 @@ footer img{
     text-align:center;
 }
 
+/* about me */
+
+.about-main{
+    padding:20px;
+}
+
+.about-me-pic{
+    width:100%;
+}
+
+.about-main-row .ant-col{
+    margin: 5px 0;
+}
+
+.hidden{
+    display:none;
+}
+
+.about-main img{
+    border-radius: 5px;
+    box-shadow: black 10px ;
+}
 
 @media only screen and (min-width: 1080px){
     .avatar{
@@ -329,7 +351,23 @@ footer img{
     .built-icons img,
     .partner-icons img{
         max-width:48px;
-      max-height: 48px;
-      width: 48px;
+        max-height: 48px;
+        width: 48px;
     }
+
+    .home-stats{
+        font-size: 1.25em;
+    }
+
+    .about-main h1{
+        font-size:3.5em;
+    }
+
+    .about-main{
+        width:50vw;
+        margin:0 auto;
+        font-size:1.5em;
+    }
+
+    
 }

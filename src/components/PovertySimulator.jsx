@@ -1,14 +1,20 @@
-import React, { Fragment } from 'react';
-import { Row, Col, Divider, Button } from 'antd'; 
+import React, { useEffect } from 'react';
+import { Row, Col } from 'antd'; 
 import ReactPlayer from 'react-player';
-import { ArrowDownOutlined } from '@ant-design/icons';
+import gsap from 'gsap';
+
 
 
 const PovertySimulator = () => {
 
+    useEffect(() => {
+        gsap.fromTo(".uw-project-main", {autoAlpha: 0}, {autoAlpha: 1, duration: 2})
+    });
     
     return(
+        
         <div className="uw-project-main">
+
             <div id="slide-1" className="uw-project-slide">
                 <div className="uw-project-slide-content">
                     <div className="justify">
@@ -96,7 +102,10 @@ const PovertySimulator = () => {
                 </div>
             </div>
         </div>
+
+    
     );
+
 };
 
 export default PovertySimulator;

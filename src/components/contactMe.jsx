@@ -3,20 +3,15 @@ import { PageHeader, Form, Input, Button } from 'antd';
 import { LinkedinOutlined } from '@ant-design/icons';
 import gsap from 'gsap';
 import axios from 'axios';
+import {Redirect} from 'react-router-dom';
 
 
 const ContactMe = (props) => {
-
-    let changeView = props.changeView;
+    const [redirect, setRedirect] = useState(false);
 
     useEffect(() => {
         gsap.fromTo(".contact-main", {autoAlpha: 0}, {autoAlpha: 1, duration: 2})
     });
-
-    const changeDisplay = (newView) => {
-        gsap.fromTo('.contact-main', {autoAlpha:1}, {autoAlpha:0, duration:2});
-        setTimeout(function(){changeView(newView)}, 2000);
-    }
 
     const [serverState, setServerState] = useState({
         submitting: false,
@@ -59,10 +54,10 @@ const ContactMe = (props) => {
         <div className="contact-main">
                <PageHeader
                 className="site-page-header"
-                onBack={() => changeDisplay('home')}
+                onBack={() => setRedirect(true)}
                 title="Home"
             />
-
+             {redirect && <Redirect to="/Mark-Kjorlien/Home"></Redirect>}
             <div className="form-container">
                 
                 { submitted ?

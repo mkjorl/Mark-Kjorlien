@@ -2,16 +2,22 @@ import React, { useEffect, Fragment, useState } from 'react';
 import { TweenLite, TimelineMax } from 'gsap';
 import { Row, Col } from 'antd';
 import '../fonts/Neonneon-3zaD6.svg';
+import {Redirect} from 'react-router-dom';
+
 
 const Landing = (props) => {
 
     let changeView=props.changeView;
+    const [redirect, setRedirect] = useState(false);
 
-    setTimeout(function(){changeView('home')}, 8000);
+    setTimeout(function(){
+        setRedirect(true);
+    }, 7800);
 
     return(
 
         <div className="landing-main" >
+            {redirect && <Redirect to="/Mark-Kjorlien/Home"></Redirect>}
             <svg
             xmlns="http://www.w3.org/2000/svg"
             id="svg8"
