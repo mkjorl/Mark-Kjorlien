@@ -57,9 +57,7 @@ const PovertySimulator = () => {
                 <div className="uw-project-slide-content">
                     <h2 className="uw-project-title">Viewing the Experience</h2>
                     <p className="uw-project-para">
-                        The Poverty simulator is a choose your own adventure, after viewing a short video or image, choices are presented
-                        and each choice has concequences, such as lowered health or increased hunger along with changes to the storyline. 
-                        At the end of the storyline a conclusion is generated based on the choices made.
+                        The Poverty simulator was designed to be a flexible interactive experience. Choices that are made during the experience can have multiple concequences, and storylines can have many different avenues and endings.
                     </p>
                     <div className="video-wrapper">
                             <ReactPlayer
