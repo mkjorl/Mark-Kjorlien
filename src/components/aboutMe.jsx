@@ -84,7 +84,7 @@ const AboutMe = (props) => {
                     </Col>
                     <Col style={{margin: '0 auto', padding:'60px 10px'}}>
                         <h2>Tucker says thank-you for visiting!</h2>
-                        <img className="about-me-pic"  src={require(`./assets/tunk.gif`)}></img>
+                        <img className="about-me-pic"  src={require(`./assets/tunk.GIF`)}></img>
                     </Col>
               </Row>
             </div>
