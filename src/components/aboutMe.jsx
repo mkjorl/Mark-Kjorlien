@@ -26,7 +26,7 @@ const AboutMe = (props) => {
               <Row gutter={[16, 32]} className="about-main-row" >
                     <Col xs={24} md={12}>
                         
-                        <img className="about-me-pic" src="https://firebasestorage.googleapis.com/v0/b/personal-site-5d5d3.appspot.com/o/fam.jpg?alt=media&token=8fe88a9a-26f9-4bd6-9580-fe165b395785"></img>
+                        <img className="about-me-pic" src={require(`./assets/fam.jpg`)}></img>
                     </Col>
                     <Col xs={24} md={12} className="justify" style={{margin:'auto auto'}}>
                         <h2>Who Am I?</h2>
@@ -39,12 +39,12 @@ const AboutMe = (props) => {
                     <Col xs={24} md={12} className="justify" style={{margin:'auto auto'}}>
                         <h2>Athlete</h2>
                         <p>
-                            I've been an athlete for my entire life, spending most of my time playing competitive hockey in Calgary. These days you could
+                            I've been an athlete for my entire life, spending my time playing competitive hockey and any other sport I could get involved in. These days you could
                             find me playing softball, golf or men's rec league hockey. 
                         </p>
                     </Col>
-                    <Col xs={24} md={12}>
-                        <img className="about-me-pic" src="https://firebasestorage.googleapis.com/v0/b/personal-site-5d5d3.appspot.com/o/west-coast-express.jpg?alt=media&token=d793d293-1c93-4c74-bc48-4e482f98221a"></img>
+                    <Col xs={24} md={12} style={{margin:'auto auto'}}>
+                        <img style={{width:'80%', margin:'0 auto'}} src={require(`./assets/hockey.jpg`)}></img>
                     </Col>
                     <Col xs={24} className="justify">
                         <h2>Food</h2>
@@ -56,13 +56,13 @@ const AboutMe = (props) => {
                     </Col>
                     <Col span={12}>
                         <figure>
-                            <img className="about-me-pic" src="https://firebasestorage.googleapis.com/v0/b/personal-site-5d5d3.appspot.com/o/Cookie.jpg?alt=media&token=d0c8a733-eaca-4085-b5cb-616e8c47faa1"></img>
+                            <img className="about-me-pic" src={require(`./assets/Cookie.jpg`)}></img>
                             <figcaption style={{textTransform:"uppercase", fontSize:'.8em'}}>Brown butter chocolate chunk cookies</figcaption>                      
                         </figure>
                     </Col>
                     <Col span={12}>
                         <figure>
-                            <img className="about-me-pic" src="https://firebasestorage.googleapis.com/v0/b/personal-site-5d5d3.appspot.com/o/smoke.jpg?alt=media&token=b3805b61-a0b1-485a-9e29-c9dc85070332"></img>
+                            <img className="about-me-pic" src={require(`./assets/meat.jpg`)}></img>
                             <figcaption style={{textTransform:"uppercase", fontSize:'.8em'}}>Pork shoulder - smoked for 8 hours with oak</figcaption>
                         </figure>
                     </Col>
@@ -74,17 +74,17 @@ const AboutMe = (props) => {
                         </p>
                     </Col> 
                     <Col span={12} style={{paddingBottom:0}}>
-                        <img className="about-me-pic" src='https://firebasestorage.googleapis.com/v0/b/personal-site-5d5d3.appspot.com/o/hydro-day.jpg?alt=media&token=3f151cec-2cfb-4dc0-a27b-0b1c4803f6c5'></img>
+                        <img className="about-me-pic" src={require(`./assets/hydro-day.jpg`)}></img>
                     </Col>
                     <Col span={12} style={{paddingBottom:0}}>
-                        <img className="about-me-pic" src='https://firebasestorage.googleapis.com/v0/b/personal-site-5d5d3.appspot.com/o/hydro-night.jpg?alt=media&token=7b7f2e11-54e7-4060-a76e-cdf7cd9257c7'></img>
+                        <img className="about-me-pic" src={require(`./assets/hydro-night.jpg`)}></img>
                     </Col>
                     <Col span={24} style={{textTransform:"uppercase", fontSize:'.8em', padding:0, margin:0}}>
                         <p>Basil, Lettuce, Broccoli, Chives &amp; Parsley</p>
                     </Col>
                     <Col style={{margin: '0 auto', padding:'60px 10px'}}>
                         <h2>Tucker says thank-you for visiting!</h2>
-                        <img className="about-me-pic"  src="https://firebasestorage.googleapis.com/v0/b/personal-site-5d5d3.appspot.com/o/IMG_0176.GIF?alt=media&token=f9ce85bb-03ec-4d4a-9a40-6cb9ab42fc69"></img>
+                        <img className="about-me-pic"  src={require(`./assets/tunk.gif`)}></img>
                     </Col>
               </Row>
             </div>

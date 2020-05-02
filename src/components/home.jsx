@@ -9,9 +9,10 @@ const Home = (props) => {
         gsap.fromTo(".home-main", {autoAlpha: 0}, {autoAlpha: 1, duration: 2});
     });
 
+
     return(
         <div className="home-main">
-            <img className="avatar" src="https://firebasestorage.googleapis.com/v0/b/personal-site-5d5d3.appspot.com/o/avatar.png?alt=media&token=83f7accf-5bf3-43c9-9572-8ed886a1c5e7"/>
+            <img className="avatar" src={require(`./assets/avatar.png`)}/>
             <h1>Mark Kjorlien</h1>
             <p className="home-stats">Developer | Hobbyist | Athlete</p>
             <div className="home-options">

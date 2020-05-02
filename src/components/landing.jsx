@@ -12,7 +12,7 @@ const Landing = (props) => {
 
     setTimeout(function(){
         setRedirect(true);
-    }, 7800);
+    }, 6800);
 
     return(
 
