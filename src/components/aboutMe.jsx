@@ -18,7 +18,7 @@ const AboutMe = (props) => {
                 onBack={() => setRedirect(true)}
                 title="Home"
             />
-            <Scrollbars>
+            <Scrollbars style={{height:"100vh", width:"100vw"}}>
            
             {redirect && <Redirect to="/Mark-Kjorlien/Home"></Redirect>}
             <div className="about-main">
@@ -35,7 +35,7 @@ const AboutMe = (props) => {
                             I was recently married and have a 4 year old Papillion / Australian Shepherd. I'm constantly exploring new hobbies 
                             and starting new projects; I'm infinitely curious.
                         </p>
-                    </Col>   
+                    </Col> 
                     <Col xs={24} md={12} className="justify" style={{margin:'auto auto'}}>
                         <h2>Athlete</h2>
                         <p>

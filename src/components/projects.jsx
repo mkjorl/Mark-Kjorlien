@@ -13,16 +13,20 @@ const Projects = (props) => {
     });
     
     return(
+        
         <div class="project-body">
             <PageHeader
                 className="page-header"
                 onBack={() => setRedirect(true)}
                 title="Home"
             />
+            
             <div className="project-main">
                 {redirect && <Redirect to="/Mark-Kjorlien/Home"></Redirect>}
                 <PovertySimulator />
             </div>
+            
+            
         </div>
         
     );

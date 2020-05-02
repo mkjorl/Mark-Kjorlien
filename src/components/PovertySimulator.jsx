@@ -2,17 +2,28 @@ import React, { useEffect } from 'react';
 import { Row, Col } from 'antd'; 
 import ReactPlayer from 'react-player';
 import gsap from 'gsap';
-
-
+import SeeMore from './SeeMore';
+import ScrollMagic from 'scrollmagic';
+import Scrollbars from 'react-custom-scrollbars';
 
 const PovertySimulator = () => {
 
     useEffect(() => {
-        gsap.fromTo(".uw-project-main", {autoAlpha: 0}, {autoAlpha: 1, duration: 2})
+        gsap.fromTo(".uw-project-main", {autoAlpha: 0}, {autoAlpha: 1, duration: 2});
+
+        var controller = new ScrollMagic.Controller();
+
+        new ScrollMagic.Scene({
+            triggerElement:'.slide-1-bottom',
+            duration:1000,
+            offset:400
+        })
+        .setClassToggle('#seeMoreArrow', 'hidden')
+        .addTo(controller);
     });
     
     return(
-        
+
         <div className="uw-project-main">
 
             <div id="slide-1" className="uw-project-slide">
@@ -26,23 +37,21 @@ const PovertySimulator = () => {
                         </p>
                     </div>
                     <Row className="slide-1-bottom">
-                        <Col span={12}>
-                            <div className="partner-icons">
-                                <h2 className="uw-project-title">Partners</h2>
-                                <a href="https://www.nait.ca/dmit" target="_blank"><img src="https://static.eluta.ca/a4/pj/employer_logo_regular_universal_en_30c6db8d4e85f46f903941371515cef9.svg"/></a>
-                                <a href="https://www.myunitedway.ca/" target="_blank"><img src="https://firebasestorage.googleapis.com/v0/b/personal-site-5d5d3.appspot.com/o/95259662_2889289137773715_890721082695221248_n%20(1).png?alt=media&token=d3f6a6f0-6a60-46fe-b76a-4eabf650bde4"/></a>
-                            </div>
+                        <Col className="partner-icons">
+                            <h2 className="uw-project-title">Partners</h2>
+                            <a href="https://www.nait.ca/dmit" target="_blank"><img src="https://static.eluta.ca/a4/pj/employer_logo_regular_universal_en_30c6db8d4e85f46f903941371515cef9.svg"/></a>
+                            <a href="https://www.myunitedway.ca/" target="_blank"><img src="https://firebasestorage.googleapis.com/v0/b/personal-site-5d5d3.appspot.com/o/95259662_2889289137773715_890721082695221248_n%20(1).png?alt=media&token=d3f6a6f0-6a60-46fe-b76a-4eabf650bde4"/></a>
                         </Col>
-                        <Col span={12}>
-                            <div className="built-icons">
-                                <h2 className="uw-project-title">Under the hood</h2>
-                                <a href="https://reactjs.org/" target="_blank"><img src="https://img.icons8.com/color/48/000000/react-native.png"/></a>
-                                <a href="https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/1200px-.NET_Core_Logo.svg.png"/></a>
-                                <a href="https://azure.microsoft.com/en-ca/" target="_blank"><img src="https://image.flaticon.com/icons/svg/873/873107.svg" /></a>
-                            </div>
+                        <Col className="built-icons">
+                            <h2 className="uw-project-title">Under the hood</h2>
+                            <a href="https://reactjs.org/" target="_blank"><img src="https://img.icons8.com/color/48/000000/react-native.png"/></a>
+                            <a href="https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/1200px-.NET_Core_Logo.svg.png"/></a>
+                            <a href="https://azure.microsoft.com/en-ca/" target="_blank"><img src="https://image.flaticon.com/icons/svg/873/873107.svg" /></a>
                         </Col>
                     </Row>
+                    <SeeMore />
                 </div>
+                
             </div>
             <div id="slide-2" className="uw-project-slide justify">
                 <div className="uw-project-slide-content">
@@ -102,7 +111,6 @@ const PovertySimulator = () => {
                 </div>
             </div>
         </div>
-
     
     );
 

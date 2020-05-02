@@ -118,7 +118,6 @@ a:link{
     fadeOut 3s 4s;
   }
 
-
   @keyframes dash {
     to {
       stroke-dashoffset: 1000;
@@ -181,8 +180,8 @@ a:link{
   }
 
   .slide-1-bottom{
-      padding-top:60px;
-      
+      padding-top:30px;
+      justify-content: space-evenly;
   }
 
   .built-icons img,
@@ -225,10 +224,13 @@ a:link{
     scroll-snap-type: y mandatory;
   }
 
+  
+
   .project-main{
-    width:100vw;
+    width:100%;
+    height:95vh;
     margin:0 auto;
-}
+} 
 
 
 /* footer */
@@ -278,6 +280,10 @@ footer img{
 .about-main img{
     border-radius: 5px;
     box-shadow: black 10px ;
+}
+
+#seeMoreArrow{
+    padding-top: 40px;
 }
 
 @media only screen and (min-width: 1080px){
@@ -369,5 +375,11 @@ footer img{
         font-size:1.5em;
     }
 
-    
+    .slide-1-bottom{
+        padding-top:60px;
+    }
+
+    #seeMoreArrow{
+        padding-top: 100px;
+    }
 }
