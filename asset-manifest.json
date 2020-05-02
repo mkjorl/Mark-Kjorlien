@@ -1,26 +1,34 @@
 {
   "files": {
-    "main.css": "/Mark-Kjorlien/static/css/main.8b002fa3.chunk.css",
-    "main.js": "/Mark-Kjorlien/static/js/main.15150f87.chunk.js",
-    "main.js.map": "/Mark-Kjorlien/static/js/main.15150f87.chunk.js.map",
+    "main.css": "/Mark-Kjorlien/static/css/main.bdf6b214.chunk.css",
+    "main.js": "/Mark-Kjorlien/static/js/main.f4d1987e.chunk.js",
+    "main.js.map": "/Mark-Kjorlien/static/js/main.f4d1987e.chunk.js.map",
     "runtime-main.js": "/Mark-Kjorlien/static/js/runtime-main.e0d44c4f.js",
     "runtime-main.js.map": "/Mark-Kjorlien/static/js/runtime-main.e0d44c4f.js.map",
     "static/css/2.3f179281.chunk.css": "/Mark-Kjorlien/static/css/2.3f179281.chunk.css",
-    "static/js/2.4555c639.chunk.js": "/Mark-Kjorlien/static/js/2.4555c639.chunk.js",
-    "static/js/2.4555c639.chunk.js.map": "/Mark-Kjorlien/static/js/2.4555c639.chunk.js.map",
+    "static/js/2.05479da6.chunk.js": "/Mark-Kjorlien/static/js/2.05479da6.chunk.js",
+    "static/js/2.05479da6.chunk.js.map": "/Mark-Kjorlien/static/js/2.05479da6.chunk.js.map",
     "index.html": "/Mark-Kjorlien/index.html",
-    "precache-manifest.832f52d8546c68cd9f0a142a4bc763cc.js": "/Mark-Kjorlien/precache-manifest.832f52d8546c68cd9f0a142a4bc763cc.js",
+    "precache-manifest.67ecddfd345db7d0edd1ce283f8e6ffa.js": "/Mark-Kjorlien/precache-manifest.67ecddfd345db7d0edd1ce283f8e6ffa.js",
     "service-worker.js": "/Mark-Kjorlien/service-worker.js",
     "static/css/2.3f179281.chunk.css.map": "/Mark-Kjorlien/static/css/2.3f179281.chunk.css.map",
-    "static/css/main.8b002fa3.chunk.css.map": "/Mark-Kjorlien/static/css/main.8b002fa3.chunk.css.map",
-    "static/js/2.4555c639.chunk.js.LICENSE.txt": "/Mark-Kjorlien/static/js/2.4555c639.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/Mark-Kjorlien/static/media/Neoneon-3zaD6.696ade59.otf"
+    "static/css/main.bdf6b214.chunk.css.map": "/Mark-Kjorlien/static/css/main.bdf6b214.chunk.css.map",
+    "static/js/2.05479da6.chunk.js.LICENSE.txt": "/Mark-Kjorlien/static/js/2.05479da6.chunk.js.LICENSE.txt",
+    "static/media/Cookie.jpg": "/Mark-Kjorlien/static/media/Cookie.202072a7.jpg",
+    "static/media/App.css": "/Mark-Kjorlien/static/media/Neoneon-3zaD6.696ade59.otf",
+    "static/media/avatar.png": "/Mark-Kjorlien/static/media/avatar.b094f25a.png",
+    "static/media/fam.jpg": "/Mark-Kjorlien/static/media/fam.fb351672.jpg",
+    "static/media/hockey.jpg": "/Mark-Kjorlien/static/media/hockey.16d92c69.jpg",
+    "static/media/hydro-day.jpg": "/Mark-Kjorlien/static/media/hydro-day.93dccc49.jpg",
+    "static/media/hydro-night.jpg": "/Mark-Kjorlien/static/media/hydro-night.3875b9ed.jpg",
+    "static/media/meat.jpg": "/Mark-Kjorlien/static/media/meat.cf90c5d5.jpg",
+    "static/media/tunk.gif": "/Mark-Kjorlien/static/media/tunk.634e1d1b.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.e0d44c4f.js",
     "static/css/2.3f179281.chunk.css",
-    "static/js/2.4555c639.chunk.js",
-    "static/css/main.8b002fa3.chunk.css",
-    "static/js/main.15150f87.chunk.js"
+    "static/js/2.05479da6.chunk.js",
+    "static/css/main.bdf6b214.chunk.css",
+    "static/js/main.f4d1987e.chunk.js"
   ]
 }
