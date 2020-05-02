@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Mark-Kjorlien/precache-manifest.e49ae5220fbae63478f5dabfbf5bdc22.js"
+  "/Mark-Kjorlien/precache-manifest.fc83655640a0280616f1d71c4591b3a0.js"
 );
 
 self.addEventListener('message', (event) => {
